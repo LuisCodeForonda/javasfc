@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.code.playersfc.HelloController">
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="794.0" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="16.0">
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="768.0" spacing="8.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="abrir" mnemonicParsing="false" text="abrir" />
+                  <Button fx:id="cerrar" mnemonicParsing="false" text="cerrar" />
+                  <Button fx:id="play" mnemonicParsing="false" text="play" />
+                  <Button fx:id="stop" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="stop" />
+                  <Button fx:id="btnSubir" layoutX="62.0" layoutY="10.0" mnemonicParsing="false" text="subir" />
+                  <Button fx:id="btnBajar" layoutX="114.0" layoutY="10.0" mnemonicParsing="false" text="bajar" />
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <ListView fx:id="lisView" prefHeight="381.0" prefWidth="768.0" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="300.0" layoutX="7.0" />
+               </children>
+            </Pane>
+         </bottom>
+         <right>
+            <TextArea fx:id="txtArea" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
