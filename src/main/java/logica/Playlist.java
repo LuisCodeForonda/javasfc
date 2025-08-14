@@ -66,7 +66,7 @@ public class Playlist  {
         return lista.isEmpty();
     }
 
-    public int getSize(){
-        return lista.size();
+    public int getIndiceActual(){
+        return indiceActual;
     }
 }
